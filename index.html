@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классификатор ссылок</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Категории</h2>
+            <ul id="category-list"></ul>
+        </aside>
+        <main class="content">
+            <div class="content-header">
+                <h1 id="current-category">Выберите категорию</h1>
+                <input type="text" id="search-box" placeholder="Поиск по ссылкам...">
+            </div>
+            <ul id="link-list"></ul>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
