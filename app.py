@@ -1,10 +1,15 @@
-from flask import Flask, jsonify, render_template, send_from_directory
 import os
+from flask import Flask, jsonify, render_template, send_from_directory
 
-app = Flask(__name__, template_folder='templates')
+# Определяем абсолютный путь к директории приложения
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app = Flask(__name__,
+            template_folder=os.path.join(basedir, 'templates'),
+            static_folder=os.path.join(basedir, 'static'))
 
 # Путь к файлу с данными
-JSON_FILE = os.path.join('output', 'categorized_links.json')
+JSON_FILE = os.path.join(basedir, 'output', 'categorized_links.json')
 
 @app.route('/')
 def index():
