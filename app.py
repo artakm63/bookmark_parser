@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, render_template, send_from_directory
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 # Путь к файлу с данными
 JSON_FILE = os.path.join('output', 'categorized_links.json')
