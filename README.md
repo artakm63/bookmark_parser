@@ -28,16 +28,16 @@ There are two ways to provide links:
 
 **Option 1: Import from Browser Bookmarks (Recommended)**
 
-1. Export your bookmarks from your browser as an HTML file (e.g., `bookmarks.html`).
-2. Run the script with the `--bookmarks` flag:
+1.  Export your bookmarks from your browser as an HTML file (e.g., `bookmarks.html`).
+2.  Run the script with the `--bookmarks` flag:
     ```bash
     python main.py --bookmarks "C:\path\to\your\bookmarks.html"
     ```
 
 **Option 2: Use a Text File**
 
-1. Add URLs to the `ссылки.txt` file (or any other text file), one URL per line.
-2. Run the script. If you use a file other than `ссылки.txt`, specify it with the `--input` flag.
+1.  Add URLs to the `ссылки.txt` file (or any other text file), one URL per line.
+2.  Run the script. If you use a file other than `ссылки.txt`, specify it with the `--input` flag.
     ```bash
     # Using the default ссылки.txt
     python main.py
